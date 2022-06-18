@@ -3,6 +3,8 @@ radio.onReceivedValue(function (name, value) {
         x_ac = value
     } else if (name == "yac") {
         y_ac = value
+    } else if (name == "light") {
+        pins.digitalWritePin(DigitalPin.P0, value)
     }
     m1value = y_ac / 1024 * -255
     m2value = y_ac / 1024 * -255
@@ -18,11 +20,12 @@ let m2value = 0
 let m1value = 0
 let y_ac = 0
 let x_ac = 0
+pins.digitalWritePin(DigitalPin.P0, 0)
 radio.setGroup(1)
 basic.showLeds(`
-    . . . . .
-    . . . . .
-    . . . . .
-    # # . # #
-    . . . . .
+    . . # . .
+    . . # . .
+    # # # # #
+    . . # . .
+    . . # . .
     `)
