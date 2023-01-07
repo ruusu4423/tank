@@ -5,7 +5,7 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "motor": "github:DFRobot/pxt-motor#2cdf17586556c5a532782aa436c516ae50f5f316"
+        "motor": "github:nekoma-seisakusho/pxt-motor#7da7119553b63aa7ff0d7302a04c7a79df0de716"
     },
     "files": [
         "main.blocks",
