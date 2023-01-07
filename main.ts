@@ -7,7 +7,7 @@ radio.onReceivedValue(function (name, value) {
         pins.digitalWritePin(DigitalPin.P0, value)
         pins.digitalWritePin(DigitalPin.P1, value)
     } else if (name == "degree") {
-        motor.servo(motor.Servos.S1, value / 1024 * 180)
+        motor.servo(motor.Servos.S1, value)
     }
     m1value = y_ac / 1024 * -255
     m2value = y_ac / 1024 * -255
