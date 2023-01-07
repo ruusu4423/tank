@@ -23,6 +23,7 @@ let m2value = 0
 let m1value = 0
 let y_ac = 0
 let x_ac = 0
+music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpressionPlayMode.InBackground)
 pins.digitalWritePin(DigitalPin.P0, 0)
 pins.digitalWritePin(DigitalPin.P1, 0)
 radio.setGroup(1)
